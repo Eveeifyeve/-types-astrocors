@@ -1,0 +1,2 @@
+# -types-astrocors
+Astrocors types
