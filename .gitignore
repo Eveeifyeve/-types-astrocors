@@ -1,0 +1,8 @@
+# Node
+
+
+# Nix 
+.envrc
+.devenv
+.direnv
+.pre-commit-config.yaml
