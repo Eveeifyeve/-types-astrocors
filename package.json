@@ -1,16 +1,19 @@
 {
-	"name": "@types/astrocors",
-	"version": "0.5.0",
-	"projects": ["https://www.npmjs.com/package/astrocors"],
+	"name": "astrocors-types",
+	"version": "0.0.1",
+	"license": "MIT",
+	"main": "",
+	"types": "index.d.ts",
+	"description": "Types for astroCors package.",
+	"repository": {
+		"type": "git",
+		"url": "https:://github.com/eveeifyeve/astrocors-types"
+	},
+	"files": ["*.d.ts"],
+	"dependencies": {},
 	"devDependencies": {
 		"astro": "^4.7.1",
 		"astrocors": "^0.1.4",
 		"typescript": "^5.4.5"
-	},
-	"owners": [
-		{
-			"name": "Eveeifyeve",
-			"githubUsername": "eveeifyeve"
-		}
-	]
+	}
 }
