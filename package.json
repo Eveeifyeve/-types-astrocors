@@ -10,10 +10,12 @@
 		"url": "https:://github.com/eveeifyeve/astrocors-types"
 	},
 	"files": ["*.d.ts"],
-	"dependencies": {},
 	"devDependencies": {
-		"astro": "^4.7.1",
+		"@types/express": "^4.17.21",
 		"astrocors": "^0.1.4",
 		"typescript": "^5.4.5"
+	},
+	"dependencies": {
+		"express": "^4.19.2"
 	}
 }
