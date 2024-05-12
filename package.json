@@ -11,11 +11,16 @@
 		"url": "https:://github.com/eveeifyeve/astrocors-types"
 	},
 	"files": ["*.d.ts"],
+	"homepage": "https:://github.com/eveeifyeve/astrocors-types",
 	"devDependencies": {
+		"@biomejs/biome": "^1.7.3",
+		"@definitelytyped/dtslint": "^0.2.20",
+		"@definitelytyped/eslint-plugin": "^0.1.12",
 		"astrocors": "^0.1.4",
 		"typescript": "^5.4.5"
 	},
 	"dependencies": {
 		"astro": "^4.8.2"
-	}
+	},
+	"keywords": ["astro.js", "cors", "middleware", "types"]
 }
