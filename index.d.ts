@@ -1,12 +1,5 @@
-import type { NextFunction, Request } from "express";
+import type { MiddlewareHandler } from "astro";
 
-declare function corsMiddleware(
-	{ request }: { request: Request },
-	next: NextFunction,
-): Promise<Response>;
-
-interface Response {
-	body: unknown;
-	headers: Headers;
-	status: number;
+declare module "corsMiddleware" {
+	export default MiddlewareHandler;
 }
