@@ -12,10 +12,16 @@
 	},
 	"files": ["*.d.ts"],
 	"homepage": "https:://github.com/eveeifyeve/astrocors-types",
+	"scripts": {
+		"prebuild": "echo $(pwd)",
+		"test": "tsc",
+		"fmt": "echo $(which biome) && biome format --write ."
+	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.7.3",
 		"@definitelytyped/dtslint": "^0.2.20",
 		"@definitelytyped/eslint-plugin": "^0.1.12",
+		"@types/node": "^20.12.11",
 		"astrocors": "^0.1.4",
 		"typescript": "^5.4.5"
 	},

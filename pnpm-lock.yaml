@@ -7,7 +7,7 @@ settings:
 dependencies:
   astro:
     specifier: ^4.8.2
-    version: 4.8.2(typescript@5.4.5)
+    version: 4.8.2(@types/node@20.12.11)(typescript@5.4.5)
 
 devDependencies:
   '@biomejs/biome':
@@ -19,6 +19,9 @@ devDependencies:
   '@definitelytyped/eslint-plugin':
     specifier: ^0.1.12
     version: 0.1.12(@typescript-eslint/eslint-plugin@6.21.0)(@typescript-eslint/parser@6.21.0)(eslint-plugin-jsdoc@44.2.7)(eslint@8.57.0)(typescript@5.4.5)
+  '@types/node':
+    specifier: ^20.12.11
+    version: 20.12.11
   astrocors:
     specifier: ^0.1.4
     version: 0.1.4
@@ -1497,6 +1500,11 @@ packages:
       undici-types: 5.26.5
     dev: true
 
+  /@types/node@20.12.11:
+    resolution: {integrity: sha512-vDg9PZ/zi+Nqp6boSOT7plNuthRugEKixDv5sFTIpkE89MmNtEArAShI4mxuX2+UrLEe9pxC1vm2cjm9YlWbJw==}
+    dependencies:
+      undici-types: 5.26.5
+
   /@types/semver@7.5.8:
     resolution: {integrity: sha512-I8EUhyrgfLrcTkzV3TSsGyl1tSuPrEDzr0yd5m90UgNxQkyDXULk3b6MlQqTCpZpNtWe1K0hzclnZkTcLBe2UQ==}
     dev: true
@@ -1845,7 +1853,7 @@ packages:
     engines: {node: '>=0.8'}
     dev: true
 
-  /astro@4.8.2(typescript@5.4.5):
+  /astro@4.8.2(@types/node@20.12.11)(typescript@5.4.5):
     resolution: {integrity: sha512-WBrnNePQ03cF5c+9sjD3TeyJodWMuPCwygDOUo7r+7LbKDN9TJK+KxIxo01AOX4HcexhxcLiTVVCBLSsi+OX9A==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
@@ -1907,7 +1915,7 @@ packages:
       tsconfck: 3.0.3(typescript@5.4.5)
       unist-util-visit: 5.0.0
       vfile: 6.0.1
-      vite: 5.2.11
+      vite: 5.2.11(@types/node@20.12.11)
       vitefu: 0.2.5(vite@5.2.11)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -5617,7 +5625,6 @@ packages:
 
   /undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
-    dev: true
 
   /unherit@3.0.1:
     resolution: {integrity: sha512-akOOQ/Yln8a2sgcLj4U0Jmx0R5jpIg2IUyRrWOzmEbjBtGzBdHtSeFKgoEcoH4KYIG/Pb8GQ/BwtYm0GCq1Sqg==}
@@ -5831,7 +5838,7 @@ packages:
       vfile-message: 4.0.2
     dev: false
 
-  /vite@5.2.11:
+  /vite@5.2.11(@types/node@20.12.11):
     resolution: {integrity: sha512-HndV31LWW05i1BLPMUCE1B9E9GFbOu1MbenhS58FuK6owSO5qHm7GiCotrNY1YE5rMeQSFBGmT5ZaLEjFizgiQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -5859,6 +5866,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 20.12.11
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.17.2
@@ -5874,7 +5882,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 5.2.11
+      vite: 5.2.11(@types/node@20.12.11)
     dev: false
 
   /web-namespaces@2.0.1:

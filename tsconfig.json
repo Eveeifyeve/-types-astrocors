@@ -1,14 +1,16 @@
 {
 	"compilerOptions": {
-		"module": "node16",
-		"lib": ["es6", "dom"],
-		"noImplicitAny": true,
-		"noImplicitThis": true,
-		"strictFunctionTypes": true,
-		"strictNullChecks": true,
-		"types": ["./index.d.ts"],
+		"lib": ["esnext", "dom"],
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"strict": true,
+		"types": ["./index.d.ts", "@types/node"],
+		"target": "esnext",
+		"allowSyntheticDefaultImports": true,
+		"noUnusedLocals": true,
 		"noEmit": true,
-		"forceConsistentCasingInFileNames": true
+		"resolveJsonModule": true
 	},
-	"files": ["index.d.ts"]
+	"files": ["index.d.ts"],
+	"extends": "astro/tsconfigs/base"
 }
